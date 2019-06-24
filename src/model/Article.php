@@ -2,7 +2,7 @@
 
 class Article extends Db {
 
-const TABLE_NAME = "articles";
+const TABLE_NAME = "Articles";
 
 protected $id;
 protected $title;
@@ -81,7 +81,8 @@ public function getAuthorId() {
 }
 
 public function getCreatedAt() {
-    return $this->createdAt;}
+    return $this->createdAt;
+}
 
 public function getCreatedAtFr() {
     $timestamp = strtotime($this->createdAt);
